@@ -6,18 +6,18 @@ This file contains my analysis report
 if you want to see how I created the datasets and prepard the data you can read the main [`README.md`](README.md) file.  
 **To see the complete report including the code for the analysis in jupyter notebook click [here]() to go to nbviewer**  
 ## Table of Contents   
-  - [how many songs were realesd each year?](##how-many-songs-were-realesd-each-year?)  
-  - [the explicit coloumn](##the-explicit-coloumn)  
-    + [Songs with Parental Advisory over the years](###Songs-with-Parental-Advisory-over-the-years)
-    + [effect of explicit content on the popularity of the song](###effect-of-explicit-content-on-the-popularity-of-the-song)
-      * [Understanding the Data](####Understanding-the-Data)
-      * [avg popularity and distribution of popularity Values](####avg-popularity-and-distribution-of-popularity-Values)
-      * [Mean Popularity by Explicit Status Over release year](####Mean-Popularity-by-Explicit-Status-Over-release-year)
-     + [conclusion](###conclusion)
-     + [correlation map](###correlation-map)
-       * [popularity, explicit and danceability](####popularity,-explicit-and-danceability)
-     + [more fun insights](###more-fun-insights)
-  - [my personal taste](##my-personal-taste)
+  - [how many songs were realesd each year?](#how-many-songs-were-realesd-each-year?)  
+  - [the explicit coloumn](#the-explicit-coloumn)  
+    + [Songs with Parental Advisory over the years](#Songs-with-Parental-Advisory-over-the-years)
+    + [effect of explicit content on the popularity of the song](#effect-of-explicit-content-on-the-popularity-of-the-song)
+      * [Understanding the Data](#Understanding-the-Data)
+      * [avg popularity and distribution of popularity Values](#avg-popularity-and-distribution-of-popularity-Values)
+      * [Mean Popularity by Explicit Status Over release year](#Mean-Popularity-by-Explicit-Status-Over-release-year)
+     + [conclusion](#conclusion)
+     + [correlation map](#correlation-map)
+       * [popularity, explicit and danceability](#popularity,-explicit-and-danceability)
+     + [more fun insights](#more-fun-insights)
+  - [my personal taste](#my-personal-taste)
 
 
 
