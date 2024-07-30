@@ -20,7 +20,9 @@ To see the code for the analysis in jupyter notebook file click here to go to nb
 ## how many songs were realesd each year?
 note that this is effected by the way the dataset was created. for exemple you can see that the drop after 2020 is because the  dateset I found online is only up to april 2021 and my dataset is around 250 songs from each year between 1950-2024.
 
-but you can say that the number of songs every year has been increasing overall in this dataset.
+![](photos/songs_realesd_per_year.png)
+
+you can say that the number of songs every year has been increasing overall in this dataset.
 
 ## the explicit coloumn
 Certain songs have parental advisory label associated with them indicating the song contains adult content which may not be suitable for children. Let's see how many songs in the dataset have advisory label associated with them through the years.
@@ -28,7 +30,7 @@ Certain songs have parental advisory label associated with them indicating the s
 we will compre precentege of songs with explicit labal out of the total number of songs realesd that year
 
 ### Songs with Parental Advisory over the years
-
+![](photos/explicit_songs_per_year.png)
 Since the percentage of songs with explicit content each year seems to be rising, I wonder if they are also more popular.
 
 
@@ -46,6 +48,9 @@ This means that the release year will probably affect the popularity of a song s
 
 mean_popularity = 29.735
 
+![](photos/popularity_distrabution.png)
+
+![](photos/popularity_realse_year.png)
 #### explicit vs non-explicit
 
 ***avg popularity and distribution of popularity Values**  
@@ -59,6 +64,7 @@ Note that there are many more non-explicit songs in the database than explicit o
 
 to check if I can compre the means I created a graph of the distribution of popularity Values in explicit songs and non explicit songs.
 
+![](photos/popularity_explicit_non_explicit.png)
 
 We can see that the explicit songs have a normal distribution of popularity, suggesting that it should be okay to compare the mean values even if there is much less data.
 
@@ -88,7 +94,7 @@ t-statistic:** 134.8502,**p-value:** 0.0000
  **95% CI:** (14.5531, 15.8492)
 
 **Visualization:**
-
+![](photos/statistical_tests.png)
 
 It seems like there is a connection between explicit content and the popularity of a song.
 
@@ -97,6 +103,7 @@ The difference between the average popularity of explicit and non-explicit songs
 But let's see if there are no other factors that affect it. Since songs with explicit content are more common in later years, and popularity seems to be higher in later years (maybe due to the nature of the Spotify popularity algorithm), I want to see if the release year affects the popularity and not the explicitness.
 
 #### Mean Popularity by Explicit Status Over release year
+![](photos/Spotify_Analysis.png)
 
 It seems that as of 2021 the explicit songs were more popular regradless to the realse year of the song.
 
@@ -119,6 +126,7 @@ This may indicate that a 15-point difference is a significant gap.
 I can try to create a corralation heat map based on the pearson coefficient to see if there is any linear corralation between our audio features
 
 #### correlation map
+![](photos/heat_map.png)
 
 Other factors that have a somewhat positive correlation with popularity are: danceability, energy and loudness. It's interesting to note that these features also show similar positive correlation with the release year. This means that these features values tend to increase with time. Conversely, the features that have a somewhat negative correlation with popularity also show a similar negative correlation with the release year. This indicates that as the release year increases, these features values tend to decrease.
 
@@ -133,24 +141,14 @@ I can still try to show that the effect of explicitness is independent of other 
 
 What I am doing is ensuring that the distribution of explicit vs. non-explicit songs is similar across the ranges of that factor, and then showing that the average popularity of explicit songs is higher across all the ranges of that factor.
 
+![](photos/danceability.png)
+![](photos/danceability2.png)
 
-
-from the graphs above you can see that even tho danceability has a correlation with popularity as well. the avg popularity of explicit songs are almost allways higher than non explicit across all danceability ranges.  
-in addition the distrabition of explict vs non explicit songs over danceability ranges is not very diffrent. 
-which indicates an indipendet correlation of explicitness and popularity.
+From the graphs above, you can see that even though danceability has a correlation with popularity, the average popularity of explicit songs is almost always higher than that of non-explicit songs across all danceability ranges. Additionally, the distribution of explicit vs. non-explicit songs over danceability ranges is not very different, which indicates an independent correlation between explicitness and popularity.
 
 
 ### more fun insights
-
-
-
-
-
-
-
-
-
-
+![](photos/explicit_genre.png)
 
 
 
@@ -161,9 +159,14 @@ note that the way I matched a song to a genre in this data base is based on the 
 
 Below, I have visualized each the aforementioned "music genres" on their average values for each of Spotify's 6 key track features.  
 You can toggle the layers by clicking in the legend.  
-I will import this as an html file since Jupyter notebook does not seems to support it.  
+I will import this as an html file since Jupyter notebook does not seems to support it.
 
 When toggling between the genres, it is evident that my personal taste's distribution is most similar to that of mediterranean and pop. The only discernible differences are in valence.
+
+**this is a static preview of the graph**
+![](photos/Radar_chart)
+
+to play with the interactive graph use this [link](https://html-preview.github.io/?url=https://github.com/Maayan182/Spotify-Analysis/blob/main/interactive_radar_chart_by_genre.html)
 
 
 ## Data sources
