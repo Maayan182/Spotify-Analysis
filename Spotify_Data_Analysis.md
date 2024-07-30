@@ -5,6 +5,13 @@ This project involves collecting and analyzing data from Spotify using the Spoti
 This file contains my analysis report  
 if you want to see how I created the datasets and prepard the data you can read the main [`README.md`](README.md) file.  
 **To see the complete report including the code for the analysis in jupyter notebook click [here]() to go to nbviewer**  
+## Table of Contents  
+- [Analysis](#Analysis)
+ * [how many songs were realesd each year?](##how many songs were realesd each year?)
+ * [the explicit coloumn](##the explicit coloumn)
+ * [Songs with Parental Advisory over the years](###Songs with Parental Advisory over the years)
+
+
 ## Key Features
 
 - Data collection using Spotify's API to fetch song attributes.
@@ -152,25 +159,28 @@ From the graphs above, you can see that even though danceability has a correlati
 ### more fun insights
 ![](photos/explicit_genre.png)
 
-
+### my personal taste
 
 In the last part of the analysis, I wanted to compare my listening behavior to a variety of genres. Using Spotify's API, I will be using my account's top 50 played songs to represent my personal "music genre".  
 I also gathered data from the tracks data frame I created to get the music genres.  
 note that the way I matched a song to a genre in this data base is based on the artist genres list I got from the API because Spotifiy API wont show a song genre.  
-*to see how I did it go to the "Creating_Database" file.
+*to see how I did it go to the `Creating_Database` file.
 
 Below, I have visualized each the aforementioned "music genres" on their average values for each of Spotify's 6 key track features.  
 You can toggle the layers by clicking in the legend.  
 I will import this as an html file since Jupyter notebook does not seems to support it.
 
+I have also comperd the average duration of each genre to my top 50 tracks.
+
 When toggling between the genres, it is evident that my personal taste's distribution is most similar to that of mediterranean and pop. The only discernible differences are in valence.
 
-**this is a static preview of the graph**
+**this is a static preview of the graph**  
+to play with the interactive graph use this [link](https://html-preview.github.io/?url=https://github.com/Maayan182/Spotify-Analysis/blob/main/interactive_radar_chart_by_genre.html)
 ![](photos/Radar_chart)
 
-to play with the interactive graph use this [link](https://html-preview.github.io/?url=https://github.com/Maayan182/Spotify-Analysis/blob/main/interactive_radar_chart_by_genre.html)
 
-
+my top 50 tracks average duration is 245.68 seconds you can see it's quite long and takes the 5th place.
+![](photos/duration_genres.png)
 ## Data sources
 
 The data sets I used are the ones I cretated in The file `Creating _Database.ipynb`  
