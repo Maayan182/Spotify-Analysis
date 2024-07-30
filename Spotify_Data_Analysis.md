@@ -42,6 +42,9 @@ note that this is effected by the way the dataset was created. for exemple you c
 
 you can say that the number of songs every year has been increasing overall in this dataset.
 
+[Back to Top](#Table-of-Contents)
+
+
 ## the explicit coloumn
 Certain songs have parental advisory label associated with them indicating the song contains adult content which may not be suitable for children. Let's see how many songs in the dataset have advisory label associated with them through the years.
 
@@ -51,6 +54,7 @@ we will compre precentege of songs with explicit labal out of the total number o
 ![](photos/explicit_songs_per_year.png)
 Since the percentage of songs with explicit content each year seems to be rising, I wonder if they are also more popular.
 
+[Back to Top](#Table-of-Contents)
 
 ### effect of explicit content on the popularity of the song
 
@@ -62,6 +66,8 @@ From Spotify's documentation:
 
 This means that the release year will probably affect the popularity of a song since a new song with a lot of streams now will have a higher score than an old song that had more streams years ago but is now forgotten. In other words, popularity is not an "all-time popularity" or "total number of streams" but the current popularity of the song. Since most of our data is from 2021, it reflects the 2021 popularity score.
 
+[Back to Top](#Table-of-Contents)
+
 #### avg popularity and distribution of popularity Values
 
 mean_popularity = 29.735
@@ -69,9 +75,12 @@ mean_popularity = 29.735
 ![](photos/popularity_distrabution.png)
 
 ![](photos/popularity_realse_year.png)
+
+[Back to Top](#Table-of-Contents)
+
 #### explicit vs non-explicit
 
-***avg popularity and distribution of popularity Values**  
+**avg popularity and distribution of popularity Values**  
 let's calculate the mean on the explicit songs and the non explicit songs
 
 Mean for explicit: 47.371  
@@ -120,10 +129,14 @@ The difference between the average popularity of explicit and non-explicit songs
 
 But let's see if there are no other factors that affect it. Since songs with explicit content are more common in later years, and popularity seems to be higher in later years (maybe due to the nature of the Spotify popularity algorithm), I want to see if the release year affects the popularity and not the explicitness.
 
+[Back to Top](#Table-of-Contents)
+
 #### Mean Popularity by Explicit Status Over release year
 ![](photos/Spotify_Analysis.png)
 
 It seems that as of 2021 the explicit songs were more popular regradless to the realse year of the song.
+
+[Back to Top](#Table-of-Contents)
 
 ### conclusion
 
@@ -143,6 +156,8 @@ This may indicate that a 15-point difference is a significant gap.
 
 I can try to create a corralation heat map based on the pearson coefficient to see if there is any linear corralation between our audio features
 
+[Back to Top](#Table-of-Contents)
+
 ## correlation map
 ![](photos/heat_map.png)
 
@@ -152,6 +167,8 @@ I wonder if thoes features become less popular because they are no longer reales
 or is it the other way around. the artists noticed the popular trend and started realesing less songs with these features.
 
 *Note that there isn't really a strong linear connection between most of the factors here, especially when looking at the popularity of the song, which is what I wanted to check. Since there doesn't seem to be a strong correlation, I think I will not attempt to create a multiple linear regression model to predict the song's popularity
+
+[Back to Top](#Table-of-Contents)
 
 ### popularity, explicit and danceability
 
@@ -164,9 +181,13 @@ What I am doing is ensuring that the distribution of explicit vs. non-explicit s
 
 From the graphs above, you can see that even though danceability has a correlation with popularity, the average popularity of explicit songs is almost always higher than that of non-explicit songs across all danceability ranges. Additionally, the distribution of explicit vs. non-explicit songs over danceability ranges is not very different, which indicates an independent correlation between explicitness and popularity.
 
+[Back to Top](#Table-of-Contents)
+
 
 ### more fun insights
 ![](photos/explicit_genre.png)
+
+[Back to Top](#Table-of-Contents)
 
 ## my personal taste
 
@@ -190,6 +211,9 @@ to play with the interactive graph use this [link](https://html-preview.github.i
 
 my top 50 tracks average duration is 245.68 seconds you can see it's quite long and takes the 5th place.
 ![](photos/duration_genres.png)
+
+[Back to Top](#Table-of-Contents)
+
 ## Data sources
 
 The data sets I used are the ones I cretated in The file `Creating _Database.ipynb`  
