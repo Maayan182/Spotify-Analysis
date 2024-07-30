@@ -6,7 +6,7 @@ This file contains my analysis report
 if you want to see how I created the datasets and prepard the data you can read the main [`README.md`](README.md) file.  
 **To see the complete report including the code for the analysis in jupyter notebook click [here]() to go to nbviewer**  
 ## Table of Contents   
-  - [how many songs were realesd each year?](#how-many-songs-were-realesd-each-year?)  
+  - [how many songs were realesd each year](#how-many-songs-were-realesd-each-year)  
   - [the explicit coloumn](#the-explicit-coloumn)  
     + [Songs with Parental Advisory over the years](#Songs-with-Parental-Advisory-over-the-years)
     + [effect of explicit content on the popularity of the song](#effect-of-explicit-content-on-the-popularity-of-the-song)
@@ -35,7 +35,7 @@ if you want to see how I created the datasets and prepard the data you can read 
 - Libraries: pandas, numpy, matplotlib, plotly, seaborn, scipy.
 # Analysis
 
-## how many songs were realesd each year?
+## how many songs were realesd each year
 note that this is effected by the way the dataset was created. for exemple you can see that the drop after 2020 is because the  dateset I found online is only up to april 2021 and my dataset is around 250 songs from each year between 1950-2024.
 
 ![](photos/songs_realesd_per_year.png)
