@@ -1,8 +1,10 @@
 
 # Spotify Data Analysis Project
 
-This project involves collecting and analyzing data from Spotify using the Spotify API and combining it with additional datasets to create a comprehensive music database. My goal was to practice my skills in data preparation and analysis using Python. I learned to use Spotify's API and the Spotipy library from the documentation, with help from YouTube and various AI chats like ChatGPT and Claude. This file contains my analysis report if you want to see how I created the datasets and prepard the data you can read the main README file.
-To see the code for the analysis in jupyter notebook file click here to go to nbviewer 
+This project involves collecting and analyzing data from Spotify using the Spotify API and combining it with additional datasets to create a comprehensive music database. My goal was to practice my skills in data preparation and analysis using Python. I learned to use Spotify's API and the Spotipy library from the documentation, with help from YouTube and various AI chats like ChatGPT and Claude.  
+This file contains my analysis report  
+if you want to see how I created the datasets and prepard the data you can read the main [`README.md`](README.md) file.  
+To see the complete report including the code for the analysis in jupyter notebook click [here]() to go to nbviewer 
 ## Key Features
 
 - Data collection using Spotify's API to fetch song attributes.
