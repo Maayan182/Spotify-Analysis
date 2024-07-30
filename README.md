@@ -4,7 +4,7 @@ This project involves collecting and analyzing data from Spotify using the Spoti
 My goal was to practice my skills in data preparation and analysis using Python.
 I learned to use Spotify's API and the Spotipy library from the documentation, with help from YouTube and various AI chats like ChatGPT and Claude.
 The analysis itself will be in a different file.
-To see the jupyter notebook file on Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Maayan182/Spotify-Analysis.git/HEAD?labpath=Creating+_Database.ipynb)
+To see the jupyter notebook file on [NBviwer](https://nbviewer.org/github/Maayan182/Spotify-Analysis/blob/main/Creating%20_Database.ipynb)
 
 
 ## Features
