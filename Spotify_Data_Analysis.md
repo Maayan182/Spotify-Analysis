@@ -5,11 +5,20 @@ This project involves collecting and analyzing data from Spotify using the Spoti
 This file contains my analysis report  
 if you want to see how I created the datasets and prepard the data you can read the main [`README.md`](README.md) file.  
 **To see the complete report including the code for the analysis in jupyter notebook click [here]() to go to nbviewer**  
-## Table of Contents  
-- [Analysis](#Analysis)
- * [how many songs were realesd each year?](##how many songs were realesd each year?)
- * [the explicit coloumn](##the explicit coloumn)
- * [Songs with Parental Advisory over the years](###Songs with Parental Advisory over the years)
+## Table of Contents   
+  - [how many songs were realesd each year?](##how-many-songs-were-realesd-each-year?)  
+  - [the explicit coloumn](##the-explicit-coloumn)  
+    + [Songs with Parental Advisory over the years](###Songs-with-Parental-Advisory-over-the-years)
+    + [effect of explicit content on the popularity of the song](###effect-of-explicit-content-on-the-popularity-of-the-song)
+      * [Understanding the Data](####Understanding-the-Data)
+      * [avg popularity and distribution of popularity Values](####avg-popularity-and-distribution-of-popularity-Values)
+      * [Mean Popularity by Explicit Status Over release year](####Mean-Popularity-by-Explicit-Status-Over-release-year)
+     + [conclusion](###conclusion)
+     + [correlation map](###correlation-map)
+       * [popularity, explicit and danceability](####popularity,-explicit-and-danceability)
+     + [more fun insights](###more-fun-insights)
+  - [my personal taste](##my-personal-taste)
+
 
 
 ## Key Features
@@ -45,7 +54,7 @@ Since the percentage of songs with explicit content each year seems to be rising
 
 ### effect of explicit content on the popularity of the song
 
-**Understanding the Data:**
+#### Understanding the Data:
 
 From Spotify's documentation: 
 
@@ -116,7 +125,7 @@ But let's see if there are no other factors that affect it. Since songs with exp
 
 It seems that as of 2021 the explicit songs were more popular regradless to the realse year of the song.
 
-#### conclusion
+### conclusion
 
 In 2021, songs with explicit content were more popular on average by 15 points than non-explicit songs. There is also an upward trend in releasing explicit content songs since around 1980.
 
@@ -134,7 +143,7 @@ This may indicate that a 15-point difference is a significant gap.
 
 I can try to create a corralation heat map based on the pearson coefficient to see if there is any linear corralation between our audio features
 
-#### correlation map
+## correlation map
 ![](photos/heat_map.png)
 
 Other factors that have a somewhat positive correlation with popularity are: danceability, energy and loudness. It's interesting to note that these features also show similar positive correlation with the release year. This means that these features values tend to increase with time. Conversely, the features that have a somewhat negative correlation with popularity also show a similar negative correlation with the release year. This indicates that as the release year increases, these features values tend to decrease.
@@ -144,7 +153,7 @@ or is it the other way around. the artists noticed the popular trend and started
 
 *Note that there isn't really a strong linear connection between most of the factors here, especially when looking at the popularity of the song, which is what I wanted to check. Since there doesn't seem to be a strong correlation, I think I will not attempt to create a multiple linear regression model to predict the song's popularity
 
-**popularity, explicit and danceability**
+### popularity, explicit and danceability
 
 I can still try to show that the effect of explicitness is independent of other factors in the following way, but it will be less accurate and will force me to do it for each of the other factors. I will demonstrate this only on danceability as a proof of concept.
 
@@ -159,7 +168,7 @@ From the graphs above, you can see that even though danceability has a correlati
 ### more fun insights
 ![](photos/explicit_genre.png)
 
-### my personal taste
+## my personal taste
 
 In the last part of the analysis, I wanted to compare my listening behavior to a variety of genres. Using Spotify's API, I will be using my account's top 50 played songs to represent my personal "music genre".  
 I also gathered data from the tracks data frame I created to get the music genres.  
