@@ -1,4 +1,4 @@
-# Spotify Data Analysis Project
+# Spotify Data Analysis Project - Preparation Of The Data
 
 This project involves collecting and analyzing data from Spotify using the Spotify API and combining it with additional datasets to create a comprehensive music database.  
 My goal was to practice my skills in data preparation and analysis using Python.  
