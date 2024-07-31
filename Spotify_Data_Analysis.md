@@ -194,7 +194,7 @@ From the graphs above, you can see that even though danceability has a correlati
 In this part of the analysis, I wanted to compare my listening behavior to a variety of genres. Using Spotify's API, I will be using my account's top 50 played songs to represent my personal "music genre".  
 I also gathered data from the tracks data frame I created to get the music genres.  
 note that the way I matched a song to a genre in this data base is based on the artist genres list I got from the API because Spotifiy API wont show a song genre.  
-*to see how I did it go to the `Creating_Database` file.
+*to see how I did it go to the [`Creating_Database`](https://nbviewer.org/github/Maayan182/Spotify-Analysis/blob/main/Creating%20_Database.ipynb) file.
 
 Below, I have visualized each the aforementioned "music genres" on their average values for each of Spotify's 6 key track features.  
 You can toggle the layers by clicking in the legend.  
