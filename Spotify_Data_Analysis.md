@@ -191,7 +191,7 @@ From the graphs above, you can see that even though danceability has a correlati
 
 ## my personal taste
 
-In the last part of the analysis, I wanted to compare my listening behavior to a variety of genres. Using Spotify's API, I will be using my account's top 50 played songs to represent my personal "music genre".  
+In this part of the analysis, I wanted to compare my listening behavior to a variety of genres. Using Spotify's API, I will be using my account's top 50 played songs to represent my personal "music genre".  
 I also gathered data from the tracks data frame I created to get the music genres.  
 note that the way I matched a song to a genre in this data base is based on the artist genres list I got from the API because Spotifiy API wont show a song genre.  
 *to see how I did it go to the `Creating_Database` file.
@@ -211,6 +211,20 @@ to play with the interactive graph use this [link](https://html-preview.github.i
 
 my top 50 tracks average duration is 245.68 seconds you can see it's quite long and takes the 5th place.
 ![](photos/duration_genres.png)
+
+[Back to Top](#Table-of-Contents)
+
+In case you were curious and made it this far, these are my current top 10 songs. With a little bit of merging and cleaning, you can also see the artists of those songs.  
+You can see I really like duets  
+![](photos/my_top_ten_songs_2024)
+
+In the final part of the analysis, I wanted to compare the popularity of my top artists to the general dataset. Using Spotify's API, I will use my account's top 50 played artists and see where they are positioned when the dataset is sorted based on the popularity and followers of the artists.
+
+My top ten artists and their popularity values
+![](photos/my_top_ten_artists.png)
+
+My top ten artists and their rankings compared to the entire dataset, when sorted by popularity and follower count
+![](photos/my_top_artists_sorted.png)
 
 [Back to Top](#Table-of-Contents)
 
